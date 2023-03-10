@@ -1,0 +1,47 @@
+GET http://localhost:3000/todos/
+Accept: application/json
+
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Buy milk",
+  "description": "2% milk",
+  "status": "active"
+}
+
+###
+
+GET http://localhost:3000/todos/1
+Accept: application/json
+
+###
+
+
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+  "title": "Buy milk edited",
+  "description": "2% milk",
+  "status": "completed"
+}
+
+###
+
+
+DELETE http://localhost:3000/todos/1
+Content-Type: application/json
+Accept: application/json
+
+###
+
+DELETE http://localhost:3000/todos/
+Content-Type: application/json
+Accept: application/json
+
+
+
